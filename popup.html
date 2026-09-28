@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color picker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img
+          src="display.jpeg"
+          alt="img"
+        />
+      </div>
+      <div class="content">
+        <h1 class="pixel">🎨 Color Picker</h1>
+        <p>Pick a color to get its HEX value</p>
+        <input type="color" id="colorInput"  />
+
+        <div class="color-info">
+          <span id="hexValue" class="pixel">#000000</span>
+          <button id="copyButton">Copy</button>
+        </div>
+        <div class="rgb-info color-info" >
+          <span id="rgbValue" class="pixel">RGB(0, 0, 0)</span>
+          <button id="copyButtonrgb">Copy</button>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

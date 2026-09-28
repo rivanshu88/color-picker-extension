@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* Pixel font */
+.pixel {
+  font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-variation-settings: "ELSH" 0;
+  text-align: center;
+}
+
+/* Main container */
+.container {
+  width: 340px;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+
+/* Header image */
+.img {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Heading */
+h1 {
+  margin: 9px 0;
+  font-size: 2.5em;
+}
+
+/* Description */
+.content p {
+  width: 92%;
+  margin: auto auto 18px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Color picker */
+#colorInput {
+  display: block;
+  width: 75%;
+  height: 75px;
+  margin: 0 auto;
+
+  cursor: pointer;
+
+  background-color: rgba(10, 10, 10, 0.947);
+  border: 2px solid #333333b9;
+  border-radius: 10px;
+}
+
+/* HEX information */
+.color-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  width: 94%;
+  margin: 18px auto 0px;
+  padding: 10px 12px;
+
+  background: white;
+  color: black;
+
+  border-radius: 8px;
+}
+
+/* Copy button */
+#copyButton,
+#copyButtonrgb {
+  border: none;
+  padding: 8px 14px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  background: #222;
+  color: white;
+
+  transition:
+    opacity 0.2s,
+    transform 0.1s;
+}
+
+#copyButton:hover,
+#copyButtonrgb:hover {
+  opacity: 0.8;
+}
+
+#copyButton:active,
+#copyButtonrgb:active {
+  transform: scale(0.96);
+}
