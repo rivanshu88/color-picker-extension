@@ -76,4 +76,4 @@ This project was built as a beginner Chrome extension project to learn HTML, CSS
 
 ## 👨‍💻 Author
 Rivanshu Behal
-```
+
